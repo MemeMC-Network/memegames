@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #050505;
+    background: linear-gradient(135deg, #020024, #090979, #00d4ff);
     color: white;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
@@ -22,6 +22,12 @@ header {
     font-size: 2rem;
     text-transform: uppercase;
     text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff, 0 0 20px #ff00ff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    100% { opacity: 0.8; }
 }
 
 /* Search Bar */
