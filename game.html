@@ -12,16 +12,14 @@
     </header>
 
     <main>
-        <img id="gameImage" src="" alt="Game Image">
-        <p>Get ready for an epic experience with <span id="gameName"></span>!</p>
+        <iframe id="gameFrame" src="" width="90%" height="500px" frameborder="0"></iframe>
         <a href="index.html" class="back-button">⬅ Back to Games</a>
     </main>
 
     <script>
         const params = new URLSearchParams(window.location.search);
         document.getElementById("gameTitle").textContent = params.get("name");
-        document.getElementById("gameImage").src = params.get("img");
-        document.getElementById("gameName").textContent = params.get("name");
+        document.getElementById("gameFrame").src = params.get("link");
     </script>
 </body>
 </html>
