@@ -21,6 +21,10 @@ function displayGames(filteredGames) {
             <div class="game-title">${game.name}</div>
         `;
 
+        gameCard.addEventListener("click", () => {
+            window.location.href = `game.html?name=${encodeURIComponent(game.name)}&img=${encodeURIComponent(game.img)}`;
+        });
+
         gameGrid.appendChild(gameCard);
     });
 }
