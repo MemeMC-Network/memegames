@@ -2,7 +2,9 @@ const games = [
     { name: "Cyber Rush", img: "https://via.placeholder.com/300x200?text=Cyber+Rush" },
     { name: "Neon Drift", img: "https://via.placeholder.com/300x200?text=Neon+Drift" },
     { name: "Shadow Arena", img: "https://via.placeholder.com/300x200?text=Shadow+Arena" },
-    { name: "Pixel Blaster", img: "https://via.placeholder.com/300x200?text=Pixel+Blaster" }
+    { name: "Pixel Blaster", img: "https://via.placeholder.com/300x200?text=Pixel+Blaster" },
+    { name: "Galaxy Warriors", img: "https://via.placeholder.com/300x200?text=Galaxy+Warriors" },
+    { name: "Techno Runners", img: "https://via.placeholder.com/300x200?text=Techno+Runners" }
 ];
 
 const gameGrid = document.getElementById("gameGrid");
