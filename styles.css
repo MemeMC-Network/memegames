@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #000;
+    background-color: #0a0a0a;
     color: white;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 header {
-    padding: 20px;
-    font-size: 1.5rem;
-    text-shadow: 0 0 10px cyan;
+    margin-bottom: 30px;
+}
+
+.glow-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff, 0 0 20px #ff00ff;
 }
 
 .game-grid {
@@ -26,21 +35,27 @@ header {
 
 .game-card {
     position: relative;
-    border: 2px solid cyan;
+    border: 2px solid #00eaff;
     padding: 10px;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .game-card:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px cyan;
+    box-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
 }
 
 .game-card img {
     width: 100%;
     border-radius: 8px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.game-card:hover img {
+    opacity: 0.3;
 }
 
 .game-title {
@@ -53,4 +68,17 @@ header {
     border-radius: 5px;
     font-size: 0.8rem;
     color: black;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.game-card:hover .game-title {
+    opacity: 1;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #00eaff;
+    text-shadow: 0 0 5px #00eaff;
 }
