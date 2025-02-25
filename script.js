@@ -1,5 +1,5 @@
 const games = [
-    { name: "Cyber Rush", img: "https://via.placeholder.com/300x200?text=Cyber+Rush" },
+    { name: "Cyber Rush", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVo5P-2sWTieh6nyZJ5Lvm-TfRDWLT605b5w&s" },
     { name: "Neon Drift", img: "https://via.placeholder.com/300x200?text=Neon+Drift" },
     { name: "Shadow Arena", img: "https://via.placeholder.com/300x200?text=Shadow+Arena" },
     { name: "Pixel Blaster", img: "https://via.placeholder.com/300x200?text=Pixel+Blaster" },
