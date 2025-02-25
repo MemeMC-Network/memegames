@@ -27,7 +27,7 @@ header {
 /* Search Bar */
 #searchBar {
     margin-top: 15px;
-    padding: 10px;
+    padding: 12px;
     width: 80%;
     max-width: 400px;
     font-size: 1rem;
@@ -36,12 +36,13 @@ header {
     color: white;
     text-align: center;
     outline: none;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: 0.3s;
+    box-shadow: 0 0 10px #00eaff;
 }
 
 #searchBar:focus {
-    box-shadow: 0 0 10px #00eaff;
+    box-shadow: 0 0 20px #00eaff, 0 0 40px #ff00ff;
 }
 
 /* Game Grid */
@@ -62,6 +63,7 @@ header {
     overflow: hidden;
     background: rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .game-card:hover {
