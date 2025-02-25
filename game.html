@@ -13,13 +13,29 @@
 
     <main>
         <iframe id="gameFrame" src="" width="90%" height="500px" frameborder="0"></iframe>
-        <a href="index.html" class="back-button">⬅ Back to Games</a>
+        <div class="button-container">
+            <button class="neon-button" onclick="goFullScreen()">🔲 Fullscreen</button>
+            <a href="index.html" class="neon-button">⬅ Back to Games</a>
+        </div>
     </main>
 
     <script>
         const params = new URLSearchParams(window.location.search);
         document.getElementById("gameTitle").textContent = params.get("name");
         document.getElementById("gameFrame").src = params.get("link");
+
+        function goFullScreen() {
+            const iframe = document.getElementById("gameFrame");
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
     </script>
 </body>
 </html>
