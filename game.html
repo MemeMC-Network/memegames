@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="glow-text" id="gameTitle"></h1>
+    </header>
+
+    <main>
+        <img id="gameImage" src="" alt="Game Image">
+        <p>Get ready for an epic experience with <span id="gameName"></span>!</p>
+        <a href="index.html" class="back-button">⬅ Back to Games</a>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("gameTitle").textContent = params.get("name");
+        document.getElementById("gameImage").src = params.get("img");
+        document.getElementById("gameName").textContent = params.get("name");
+    </script>
+</body>
+</html>
