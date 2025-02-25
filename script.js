@@ -1,10 +1,19 @@
 const games = [
-    { name: "Cyber Rush", img: "https://via.placeholder.com/300x200?text=Cyber+Rush" },
-    { name: "Neon Drift", img: "https://via.placeholder.com/300x200?text=Neon+Drift" },
-    { name: "Shadow Arena", img: "https://via.placeholder.com/300x200?text=Shadow+Arena" },
-    { name: "Pixel Blaster", img: "https://via.placeholder.com/300x200?text=Pixel+Blaster" },
-    { name: "Galaxy Warriors", img: "https://via.placeholder.com/300x200?text=Galaxy+Warriors" },
-    { name: "Techno Runners", img: "https://via.placeholder.com/300x200?text=Techno+Runners" }
+    { 
+        name: "Cyber Rush", 
+        img: "https://via.placeholder.com/300x200?text=Cyber+Rush", 
+        link: "https://example.com/cyber-rush"
+    },
+    { 
+        name: "Neon Drift", 
+        img: "https://via.placeholder.com/300x200?text=Neon+Drift", 
+        link: "https://example.com/neon-drift"
+    },
+    { 
+        name: "Shadow Arena", 
+        img: "https://via.placeholder.com/300x200?text=Shadow+Arena", 
+        link: "https://example.com/shadow-arena"
+    }
 ];
 
 const gameGrid = document.getElementById("gameGrid");
@@ -22,7 +31,7 @@ function displayGames(filteredGames) {
         `;
 
         gameCard.addEventListener("click", () => {
-            window.location.href = `game.html?name=${encodeURIComponent(game.name)}&img=${encodeURIComponent(game.img)}`;
+            window.location.href = `game.html?name=${encodeURIComponent(game.name)}&img=${encodeURIComponent(game.img)}&link=${encodeURIComponent(game.link)}`;
         });
 
         gameGrid.appendChild(gameCard);
