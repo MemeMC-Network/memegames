@@ -51,7 +51,7 @@ const games = [
     },
     { 
         name: "Basketball Random", 
-        img: "/img/basketballrandom", 
+        img: "/img/basketrandom", 
         link: "https://spew45.github.io/simple-games-assets/src/basket-random"
     },
     { 
