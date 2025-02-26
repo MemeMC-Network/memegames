@@ -1,7 +1,7 @@
 const games = [
     { 
         name: "Connect 4", 
-        img: "/img/c4.png", 
+        img: "img/c4.png", 
         link: "https://kenrick95.github.io/c4"
     },
     { 
