@@ -12,7 +12,8 @@ body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     padding: 20px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     animation: neonBackground 5s infinite alternate ease-in-out;
 }
 
