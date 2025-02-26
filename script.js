@@ -1,18 +1,88 @@
 const games = [
     { 
-        name: "Cyber Rush", 
-        img: "https://via.placeholder.com/300x200?text=Cyber+Rush", 
-        link: "https://example.com/cyber-rush"
+        name: "Connect 4", 
+        img: "/img/c4.png", 
+        link: "https://kenrick95.github.io/c4"
     },
     { 
-        name: "Neon Drift", 
-        img: "https://via.placeholder.com/300x200?text=Neon+Drift", 
-        link: "https://example.com/neon-drift"
+        name: "Drift Hunters", 
+        img: "/img/drifthunters.png", 
+        link: "https://class811.github.io/g/drift-hunters"
     },
     { 
-        name: "Shadow Arena", 
-        img: "https://via.placeholder.com/300x200?text=Shadow+Arena", 
-        link: "https://example.com/shadow-arena"
+        name: "Tiny Fishing", 
+        img: "/img/tinyfishing.png", 
+        link: "https://class811.github.io/g/tiny-fishing"
+    },
+    { 
+        name: "OvO", 
+        img: "/img/OVO.png", 
+        link: "https://class811.github.io/g/ovo"
+    },
+    { 
+        name: "Stick Merge", 
+        img: "/img/stickmerge.png", 
+        link: "https://class811.github.io/g3/stick-merge"
+    },
+    { 
+        name: "Slope", 
+        img: "/img/slope", 
+        link: "https://firespread01.github.io/slope"
+    },
+    { 
+        name: "Retro Bowl", 
+        img: "/img/retrobowl", 
+        link: "https://game316009.konggames.com/gamez/0031/6009/live/index.html"
+    },
+    { 
+        name: "Cluster Rush", 
+        img: "/img/clusterrush", 
+        link: "https://script.google.com/a/macros/my.npsct.org/s/AKfycbw6e8fflbfydV7kom5id09nKaM6ix0hLlXHbs3XHOnxzrndUgPtHUHENrwKomI2Hpk3/exec"
+    },
+    { 
+        name: "Burrito Bison", 
+        img: "/img/burritobison", 
+        link: "https://burritobisononline.github.io/file"
+    },
+    { 
+        name: "Rooftop Snipers", 
+        img: "/img/rooftopsnipers", 
+        link: "https://spew45.github.io/simple-games-assets/src/rooftop-snipers"
+    },
+    { 
+        name: "Basketball Random", 
+        img: "/img/basketballrandom", 
+        link: "https://spew45.github.io/simple-games-assets/src/basket-random"
+    },
+    { 
+        name: "Soccer Random", 
+        img: "/img/soccerrandom", 
+        link: "https://spew45.github.io/simple-games-assets/src/soccer-random"
+    },
+    { 
+        name: "Boxing Random", 
+        img: "/img/boxingrandom", 
+        link: "https://spew45.github.io/simple-games-assets/src/boxing-random"
+    },
+    { 
+        name: "Monkey Mart", 
+        img: "/img/monkeymart", 
+        link: "https://swordslasher.com/games/ugi7ftbv2kgodcq7vful9u9v34wein5z/index.html"
+    },
+    { 
+        name: "Stickman Hook", 
+        img: "/img/stickmanhook", 
+        link: "https://hypackel.github.io/fork/0/g/stickmanhook/game/index.html"
+    },
+    { 
+        name: "N-Gon", 
+        img: "/img/ngon", 
+        link: "https://swordslasher.com/games/ngon/game.html"
+    },
+    { 
+        name: "Gun Spin", 
+        img: "/img/gunspin", 
+        link: "https://class811.github.io/g/gunspin"
     }
 ];
 
