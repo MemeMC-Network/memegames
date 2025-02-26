@@ -26,62 +26,62 @@ const games = [
     },
     { 
         name: "Slope", 
-        img: "/img/slope", 
+        img: "/img/slope.png", 
         link: "https://firespread01.github.io/slope"
     },
     { 
         name: "Retro Bowl", 
-        img: "/img/retrobowl", 
+        img: "/img/retrobowl.png", 
         link: "https://game316009.konggames.com/gamez/0031/6009/live/index.html"
     },
     { 
         name: "Cluster Rush", 
-        img: "/img/clusterrush", 
+        img: "/img/clusterrush.png", 
         link: "https://script.google.com/a/macros/my.npsct.org/s/AKfycbw6e8fflbfydV7kom5id09nKaM6ix0hLlXHbs3XHOnxzrndUgPtHUHENrwKomI2Hpk3/exec"
     },
     { 
         name: "Burrito Bison", 
-        img: "/img/burritobison", 
+        img: "/img/burritobison.png", 
         link: "https://burritobisononline.github.io/file"
     },
     { 
         name: "Rooftop Snipers", 
-        img: "/img/rooftopsnipers", 
+        img: "/img/rooftopsnipers.png", 
         link: "https://spew45.github.io/simple-games-assets/src/rooftop-snipers"
     },
     { 
         name: "Basketball Random", 
-        img: "/img/basketrandom", 
+        img: "/img/basketrandom.png", 
         link: "https://spew45.github.io/simple-games-assets/src/basket-random"
     },
     { 
         name: "Soccer Random", 
-        img: "/img/soccerrandom", 
+        img: "/img/soccerrandom.png", 
         link: "https://spew45.github.io/simple-games-assets/src/soccer-random"
     },
     { 
         name: "Boxing Random", 
-        img: "/img/boxingrandom", 
+        img: "/img/boxingrandom.png", 
         link: "https://spew45.github.io/simple-games-assets/src/boxing-random"
     },
     { 
         name: "Monkey Mart", 
-        img: "/img/monkeymart", 
+        img: "/img/monkeymart.png", 
         link: "https://swordslasher.com/games/ugi7ftbv2kgodcq7vful9u9v34wein5z/index.html"
     },
     { 
         name: "Stickman Hook", 
-        img: "/img/stickmanhook", 
+        img: "/img/stickmanhook.png", 
         link: "https://hypackel.github.io/fork/0/g/stickmanhook/game/index.html"
     },
     { 
         name: "N-Gon", 
-        img: "/img/ngon", 
+        img: "/img/ngon.png", 
         link: "https://swordslasher.com/games/ngon/game.html"
     },
     { 
         name: "Gun Spin", 
-        img: "/img/gunspin", 
+        img: "/img/gunspin.png", 
         link: "https://class811.github.io/g/gunspin"
     }
 ];
