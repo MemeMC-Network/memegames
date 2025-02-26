@@ -12,51 +12,53 @@ body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     padding: 20px;
-    animation: neonBackground 3s infinite;
+    overflow: hidden;
+    animation: neonBackground 5s infinite alternate ease-in-out;
 }
 
-@keyframes neonBackground {
-    0% {
-        background-color: #000;
-    }
-    50% {
-        background-color: #111;
-    }
-    100% {
-        background-color: #000;
-    }
+/* Moving Background Stars */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.imgur.com/N5FdfcJ.png');
+    opacity: 0.2;
+    z-index: -1;
+    animation: moveStars 20s linear infinite;
 }
 
+@keyframes moveStars {
+    0% { background-position: 0 0; }
+    100% { background-position: -1000px 1000px; }
+}
+
+/* Floating Header */
 header {
     margin-bottom: 30px;
+    animation: floatUpDown 3s infinite ease-in-out;
 }
 
-/* Glowing Text */
+/* Glitch Effect for Header */
 .glow-text {
     font-size: 2rem;
     text-transform: uppercase;
     text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 15px #00eaff, 0 0 20px #ff00ff;
-    animation: flicker 1.5s infinite alternate;
+    animation: glitch 1.5s infinite alternate;
 }
 
-@keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        text-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #0fa,
-            0 0 80px #0fa,
-            0 0 90px #0fa,
-            0 0 100px #0fa,
-            0 0 150px #0fa;
-    }
-    20%, 24%, 55% {
-        text-shadow: none;
-    }
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
 }
 
-/* Search Bar */
+/* Pulsing Search Bar */
 #searchBar {
     margin-top: 15px;
     padding: 12px;
@@ -69,12 +71,8 @@ header {
     text-align: center;
     outline: none;
     border-radius: 25px;
-    transition: 0.3s;
     box-shadow: 0 0 10px #00eaff;
-}
-
-#searchBar:focus {
-    box-shadow: 0 0 20px #00eaff, 0 0 40px #ff00ff;
+    animation: glowPulse 3s infinite alternate ease-in-out;
 }
 
 /* Game Grid */
@@ -87,6 +85,7 @@ header {
     margin: auto;
 }
 
+/* Game Card with Rotating Neon Border */
 .game-card {
     position: relative;
     border: 2px solid #00eaff;
@@ -96,23 +95,34 @@ header {
     background: rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     cursor: pointer;
+    animation: rotateGlow 5s linear infinite;
+}
+
+@keyframes rotateGlow {
+    0% { box-shadow: 0 0 10px #00eaff; }
+    50% { box-shadow: 0 0 20px #ff00ff; }
+    100% { box-shadow: 0 0 10px #00eaff; }
 }
 
 .game-card:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
 }
 
+/* Floating Game Images */
 .game-card img {
     width: 100%;
     border-radius: 8px;
-    transition: opacity 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    animation: floatUpDown 3s infinite ease-in-out;
 }
 
-.game-card:hover img {
-    opacity: 0.3;
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
 }
 
+/* Pulsing Game Titles */
 .game-title {
     position: absolute;
     bottom: 10px;
@@ -124,11 +134,12 @@ header {
     font-size: 0.8rem;
     color: black;
     font-weight: bold;
-    transition: opacity 0.3s ease-in-out;
+    animation: pulseGlow 2s infinite alternate;
 }
 
-.game-card:hover .game-title {
-    opacity: 1;
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 10px #00eaff; }
+    100% { box-shadow: 0 0 20px #ff00ff; }
 }
 
 /* Footer */
@@ -139,15 +150,7 @@ footer {
     text-shadow: 0 0 5px #00eaff;
 }
 
-/* Button Styling */
-.button-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* Neon Buttons */
+/* Glowing Buttons with Wave Animation */
 .neon-button {
     position: relative;
     padding: 12px 20px;
@@ -159,52 +162,39 @@ footer {
     text-transform: uppercase;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
-    text-decoration: none;
+    overflow: hidden;
     box-shadow: 0 0 10px #00eaff, 0 0 20px #ff00ff;
-}
-
-.neon-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    z-index: -1;
-    filter: blur(15px);
-    opacity: 0;
-    transition: opacity 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .neon-button:hover {
-    box-shadow: 0 0 20px #00eaff, 0 0 40px #ff00ff;
     transform: scale(1.1);
+    box-shadow: 0 0 20px #00eaff, 0 0 40px #ff00ff;
 }
 
-.neon-button:active {
-    transform: scale(0.95);
+.neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: waveGlow 1.5s infinite linear;
 }
 
-.neon-button:hover::before {
-    opacity: 1;
+@keyframes waveGlow {
+    0% { left: -100%; }
+    100% { left: 100%; }
 }
 
-/* Glowing Border Animation */
-@keyframes pulseGlow {
-    0% {
-        box-shadow: 0 0 5px #0fa, inset 0 0 5px #0fa;
-    }
-    50% {
-        box-shadow: 0 0 20px #0fa, inset 0 0 20px #0fa;
-    }
-    100% {
-        box-shadow: 0 0 5px #0fa, inset 0 0 5px #0fa;
-    }
+/* Glowing Links */
+a {
+    color: #00eaff;
+    text-decoration: none;
+    transition: text-shadow 0.3s;
 }
 
-#gameFrame {
-    border: 2px solid #0fa;
-    animation: pulseGlow 2s infinite;
+a:hover {
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #ff00ff;
 }
