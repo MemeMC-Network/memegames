@@ -88,6 +88,11 @@ const games = [
         name: "Snow Rider 3D",
         img: "/img/sr3d.png",
         link: "https://itsvijaysingh.github.io/Snow-Rider3D"
+    },
+    {
+        name: "Escape Road",
+        img: "/img/escaperoad.png",
+        link: "https://azgames.io/game/escape-road"
     }
 ];
 
