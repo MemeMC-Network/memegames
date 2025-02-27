@@ -52,7 +52,7 @@ const games = [
     { 
         name: "Basketball Random", 
         img: "/img/basketrandom.png", 
-        link: "https://spew45.github.io/simple-games-assets/src/basket-random"
+        link: "https://basket-testing.glitch.me/"
     },
     { 
         name: "Soccer Random", 
