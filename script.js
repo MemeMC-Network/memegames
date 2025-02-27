@@ -83,7 +83,11 @@ const games = [
         name: "Gun Spin", 
         img: "/img/gunspin.png", 
         link: "https://class811.github.io/g/gunspin"
-    }
+    },
+    {
+        name: "Snow Rider 3D",
+        img: "/img/sr3d.png",
+        link: "https://itsvijaysingh.github.io/Snow-Rider3D"
 ];
 
 const gameGrid = document.getElementById("gameGrid");
