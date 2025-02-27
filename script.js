@@ -88,6 +88,7 @@ const games = [
         name: "Snow Rider 3D",
         img: "/img/sr3d.png",
         link: "https://itsvijaysingh.github.io/Snow-Rider3D"
+    }
 ];
 
 const gameGrid = document.getElementById("gameGrid");
