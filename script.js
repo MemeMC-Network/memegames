@@ -92,7 +92,7 @@ const games = [
     {
         name: "Escape Road",
         img: "/img/escaperoad.png",
-        link: "https://azgames.io/game/escape-road"
+        link: "https://azgames.io/game/escape-road/"
     }
 ];
 
