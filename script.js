@@ -132,3 +132,4 @@ function filterGames() {
     const filteredGames = games.filter(game => game.name.toLowerCase().includes(query));
     displayGames(filteredGames);
 }
+
