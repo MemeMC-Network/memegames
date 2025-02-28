@@ -93,6 +93,11 @@ const games = [
         name: "Escape Road",
         img: "/img/escaperoad.png",
         link: "https://azgames.io/game/escape-road/"
+    },
+    {
+        name: "Idle Dice",
+        img: "/img/idle-dice.png",
+        link: "https://swordslasher.com/games/idle-dice-main/"
     }
 ];
 
