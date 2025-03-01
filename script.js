@@ -100,7 +100,6 @@ const games = [
         link: "https://swordslasher.com/games/idle-dice-main/"
     }
 ];
-
 const gameGrid = document.getElementById("gameGrid");
 
 function displayGames(filteredGames) {
